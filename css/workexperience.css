@@ -1,0 +1,96 @@
+nav {
+  background-color: #2c3e50;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+     }
+  
+  nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 24px;
+    }
+  
+  .menu {
+    display: flex;
+    list-style: none;
+    font-family: Arial, sans-serif;
+   }
+  .menu li {
+    margin-right: 20px;
+    
+    }
+  
+  .menu li:last-child {
+    margin-right: 0;
+    }
+   
+  .menu a:hover {
+    border-bottom: 2px solid white;
+  }
+  
+  .menu-toggle {
+    display: none;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+  }
+  
+  @media (max-width: 100px) {
+    .menu 
+    {
+      display: none;
+      flex-direction: column;
+      margin-top: 20px;
+    }
+  }
+  .Active{
+    color: aliceblue;
+    font-weight: bold;
+  }
+  .graph{
+    color: rgb(255, 255, 255);
+    padding: 5px 10px;
+    font-size: 20px;
+    font-family: serif;
+    text-align:justify;
+  }
+  
+  
+.graph1{
+  color: rgb(255, 255, 255);
+  padding: 5px 30px;
+  font-size: 20px;
+  margin: 10px;
+  font-family: serif;
+  text-align:justify;
+}
+
+.graph2{
+  color: rgb(255, 255, 255);
+  padding: 5px 10px;
+  margin: 10px;
+  font-size: 20px;
+  font-family: serif;
+  text-align:justify;
+}
+
+body{
+  background-color: #34495e;
+}
+li{
+  list-style: none;
+}
+
+.exp{
+  display: flex;
+}
+.microsoft{
+  border-color: black;
+  border:100px;
+  
+}
+.logo{
+  padding: 5px 20px;
+}

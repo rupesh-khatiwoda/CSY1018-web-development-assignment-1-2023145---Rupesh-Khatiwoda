@@ -1,0 +1,62 @@
+nav {
+  background-color: #2c3e50;/*giving background color*/
+    display: flex;
+    justify-content: space-between;/*giving space in navigation bar*/
+    align-items: center;
+    padding: 10px 20px;
+  }
+  
+  nav a {
+    color: white;/*giving text color white*/
+    text-decoration: none;
+    font-size: 24px;
+  }
+  
+  .menu {
+    display: flex;/*flexing */
+    list-style: none;
+    font-family: Arial, sans-serif;/*giving font-family*/
+  }
+  
+  .menu li { /*giving marging for listed menu options*/
+    margin-right: 20px;
+    
+  }
+  
+  .menu li:last-child { /*giving 0 margin to last */
+    margin-right: 0;
+  }
+  
+  .menu a:hover {
+    border-bottom: 2px solid white;
+  }
+
+  @media (max-width: 100px) {/*for making it responsive to any screen sizes*/
+    .menu {
+      display: none;
+      flex-direction: column;
+      margin-top: 20px;
+    }
+  
+  }
+  .Active{ /*For making active when my menu list is pressend it will be white*/
+    color: white;
+    font-weight: bold;
+  }
+  body{
+    background-color: #34495e;
+  }
+  .mid{
+    color: white;
+    font-size: 20px;
+    font-family: Arial;/*using Arial font*/
+    padding-left: 5px;
+  }
+  .paragraph{
+    color: white;
+    font-size: 18px; /*giving size to the font*/ 
+    font-family:serif;
+    text-align: justify;/*making it equally justified*/
+    padding-left: 7px;
+    margin: 2px;
+  }
