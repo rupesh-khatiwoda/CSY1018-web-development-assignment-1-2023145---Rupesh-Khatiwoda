@@ -51,13 +51,28 @@ nav {
     font-weight: bold;
   }
   .index{
-    color: azure;
+    color: rgb(52, 0, 62);
     font-size: 20px;
-    text-align: justify;
     font-family: cursive;
     margin: 4px;
-    padding: 20px;
+    position: absolute;
+    text-align: justify;
+    padding-left: 310px;
+    font-weight: 600;
+    font-style: italic;
   }
   body{
-    background-color: #34495e;
+    background-color:rgb(226, 242, 245);
+    margin: 0px;
+  }
+  .first{
+    position: absolute;
+    float: left;
+  }
+  .second{
+    padding-left: 400px;
+  }
+  .pic{
+    float: left;
+    position: absolute;
   }

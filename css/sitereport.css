@@ -31,7 +31,7 @@ nav {
     border-bottom: 2px solid white;
   }
 
-  @media (max-width: 100px) {/*for making it responsive to any screen sizes*/
+  @media only screen and (max-width: 100px) {/*for making it responsive to any screen sizes*/
     .menu {
       display: none;
       flex-direction: column;
@@ -45,26 +45,36 @@ nav {
   }
   body{
     background-color: #34495e;
+    margin: 0px;
   }
-  .mid{
-    color: white;
-    font-size: 22px;
-    font-family: Arial;/*using Arial font*/
-    padding-left: 5px;
-    flex-direction: row;
-    margin-left: 590px;
-
+  .divide {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;/*making it justified in center*/
+    max-width: 1200px;
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    font-family:cursive;
+    font-weight: 600;
+    position: absolute;
+    padding: 50px;
   }
-  .paragraph{
-    color: white;
-    font-size: 18px; /*giving size to the font*/ 
-    font-family:serif;
-    text-align: justify;/*making it equally justified*/
-    padding-left: 7px;
-    margin: 2px;
-    margin-left: 600px;
+  
+  .mid {
+    margin: 10px;
+    width: 500px; 
+    border: rgb(243, 3, 3) solid;
+    border-radius: 20px;
+    padding: 5px;
   }
-  .pic{
-    margin: 5px;
-    float: left;
+  .Active{
+    color: aliceblue;
+    font-weight: bold;
   }
+ 
+ .pic{
+  float:left;
+ }
+ .paragraph{
+  text-align: justify;
+ }

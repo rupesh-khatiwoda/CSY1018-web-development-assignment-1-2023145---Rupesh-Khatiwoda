@@ -3,7 +3,8 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 20px;
+    padding: 10px 10px;
+    margin: 0px;
      }
   
   nav a {
@@ -49,72 +50,74 @@ nav {
     color: aliceblue;
     font-weight: bold;
   }
-  .graph{
-    color: rgb(255, 255, 255);
-    padding: 5px 10px;
+  .gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;/*making it justified in center*/
+    margin: 0 auto;
+    max-width: 800px;
+    color: rgb(0, 0, 0);
     font-size: 20px;
-    font-family: serif;
-    text-align:justify;
+    float: left;
+    position: absolute;
   }
   
+  .microsoft-pic {
+    margin: 10px;
+    width: 300px;
+    padding: 40px;
+  }
   
-.graph1{
-  color: rgb(255, 255, 255);
-  padding: 5px 2px;
-  margin: 2px;
-  font-size: 20px;
-  font-family: serif;
-  text-align:justify;
- 
-}
-
-.graph2{
-  color: rgb(255, 255, 255);
-  padding: 5px 2px;
-  margin: 2px;
-  font-size: 20px;
-  font-family: serif;
-  text-align:justify;
-}
-
-body{
-  background-color: #34495e;
-}
-li{
-  list-style: none;
-}
-
-.exp{
-  display: flex;
-  background-color: #023669;
-  flex-direction: row;
-}
-.microsoft{
-  border: rgb(255, 253, 253) solid;
-  box-shadow: 5px;
-  margin-left: 900px;
-  display: flex;
-  flex-direction:column;
-  text-align:justify;
-  font-size: 18px;
-  color: white;
-  font-family: Arial, Helvetica, sans-serif;
-  float: left;
-  background-color: rgb(20, 6, 85);
+  .microsoft-pic img {
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: transform 0.2s;
+  }
+   
+  .microsoft-pic img:hover {
+    transform: scale(1.1);
+  }
+  .youtube-pic {
+    margin: 10px;
+    width: 300px;
+    padding: 40px;
+  }
   
-}
-.youtube{
-  border: rgb(255, 255, 255) solid ;
-  box-shadow: 5px;
-  margin-right: 900px;
-  display: flex;
-  flex-direction:row;
-  text-align:justify;
-  font-size: 18px;
-  color: white;
-  font-family: Arial, Helvetica, sans-serif;
-  
-}
-.logo{
-  padding: 5px 20px;
-}
+  .youtube-pic img {
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: transform 0.2s;
+  }
+   
+  .youtube-pic img:hover {
+    transform: scale(1.1);
+  }
+  .Active{
+    color: aliceblue;
+    font-weight: bold;
+  }
+  body{
+    background-color:rgb(41, 38, 47);
+    margin: 0px;
+  }
+ .color{
+  position: absolute;
+ }
+ .pic{
+  float:left;
+ }
+ .word{
+  font-weight: 600;
+  padding:30px 8px;
+  font-size: 22px;
+  font-family: cursive;
+  margin: 20px;
+  color: rgb(71, 3, 59);
+  text-align: justify;
+  border: black solid;
+ border-radius: 80px;
+ border-left: 20px;
+ border-style:dotted;
+ }

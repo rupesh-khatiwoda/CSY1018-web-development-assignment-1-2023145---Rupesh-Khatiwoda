@@ -2,7 +2,7 @@ nav {
   background-color: #2a3e52;
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: center; /*making it in center*/
     padding: 10px 20px;
   }
   
@@ -26,7 +26,7 @@ nav {
     margin-right: 0;
   }
   
-  .menu a:hover {
+  .menu a:hover { /*making it hover in bottom with solid white color line*/
     border-bottom: 2px solid white;
   }
   
@@ -64,13 +64,15 @@ nav {
   .gallery {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: center;/*making it justified in center*/
     margin: 0 auto;
     max-width: 800px;
-    background-color: #34495e;
-    color: azure;
+    color: rgb(255, 255, 255);
     font-size: 20px;
-    font-family: cursive;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    float: left;
+    position: absolute;
   }
   
   .gallery-pic {
@@ -94,7 +96,14 @@ nav {
     font-weight: bold;
   }
   body{
-    background-color: #34495e;
+    background-color:rgb(41, 38, 47);
+    margin: 0px;
   }
+ .color{
+  position: absolute;
+ }
+ .pic{
+  float:left;
+ }
 
   

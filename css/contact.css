@@ -67,21 +67,22 @@ input:focus, textarea:focus {
 
           /* Style for submit button on hover */
 body {
-  background-color: #2c3e50;
-  color: #fff;
+  background-color:black;
+  color:white;
   font-family: Arial, sans-serif;
   font-size: 16px;
+  margin: 0px;
 }
 
-.form{
+.form{ /*class for the form*/
   margin: 0 auto;
-  max-width: 600px;
-  padding: 20px;
-  background-color: #34495e;
+  max-width: 500px;
+  padding-left: 500px;
   border-radius: 10px;
+  position:absolute;
 }
 
-input[type=text], input[type=email], textarea
+input[type=text] , input[type=email] , textarea
  {/*giving width , padding, border, margin ,background color, font , font-size*/ 
   width: 100%;
   padding: 12px;
@@ -118,4 +119,7 @@ input[type=submit]:hover {/* Style for submit button on hover */
 }
 .logo{ padding-left: 250px;
   
+}
+.pic{
+float: left;
 }
