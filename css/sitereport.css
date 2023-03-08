@@ -1,51 +1,55 @@
 nav {
-  background-color: #2c3e50;/*giving background color*/
+  background-color: #2c3e50;
     display: flex;
-    justify-content: space-between;/*giving space in navigation bar*/
+    justify-content: space-between;
     align-items: center;
-    padding: 10px 20px;
-  }
+    padding: 10px 10px;
+    margin: 0px;
+   
+     }
   
   nav a {
-    color: white;/*giving text color white*/
+    color: white;
     text-decoration: none;
     font-size: 24px;
-  }
+    }
   
-  .menu {
-    display: flex;/*flexing */
+  .nav-bar {
+    display: flex;
     list-style: none;
-    font-family: Arial, sans-serif;/*giving font-family*/
-  }
-  
-  .menu li { /*giving marging for listed menu options*/
+    font-family: Arial, sans-serif;
+   }
+  .nav-bar li {
     margin-right: 20px;
     
-  }
+    }
   
-  .menu li:last-child { /*giving 0 margin to last */
+  .nav-bar li:last-child {
     margin-right: 0;
-  }
-  
-  .menu a:hover {
+    }
+   
+  .nav-bar a:hover {
     border-bottom: 2px solid white;
   }
-
-  @media only screen and (max-width: 100px) {/*for making it responsive to any screen sizes*/
-    .menu {
+  
+  .nav-bar-toggle {
+    display: none;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+  }
+  
+  @media only screen and (max-width: 400px) {
+    .nav-bar
+    {
       display: none;
       flex-direction: column;
       margin-top: 20px;
     }
-  
   }
-  .Active{ /*For making active when my menu list is pressend it will be white*/
-    color: white;
+  .Active{
+    color: aliceblue;
     font-weight: bold;
-  }
-  body{
-    background-color: #34495e;
-    margin: 0px;
   }
   .divide {
     display: flex;
@@ -72,9 +76,86 @@ nav {
     font-weight: bold;
   }
  
- .pic{
-  float:left;
- }
  .paragraph{
   text-align: justify;
  }
+ body{
+  background-image: url(../images/unsplash\ 5.jpg);
+ margin: 0px;
+  background-size: cover;
+ }
+ 
+.item{
+  display: block;
+}
+
+
+/* Hide the checkbox */
+#toggle-menu {
+  display: none;
+}
+
+/* Style the hamburger icon */
+.menu-icon {
+  font-family: Arial, sans-serif;
+  font-size: 30px;
+  cursor: pointer;
+  color: azure;
+  
+}
+.menu{
+  display: flex;
+  font-size: 10px;
+}
+
+/* Rotate the icon when the checkbox is checked */
+#toggle-menu:checked + .menu-icon {
+  transform: rotate(90deg);
+}
+
+/* Hide the menu by default */
+.menu {
+  display: none;
+  list-style: none;
+}
+
+/* Show the menu when the checkbox is checked */
+#toggle-menu:checked ~ .menu {
+  display: block;
+}
+
+
+
+@media only screen and (min-width: 968px) {
+  /* Hide hamburger icon on larger screens */
+  .menu-icon {
+    display: none;
+  }
+  /* Show regular menu on larger screens */
+  .menu {
+    display: none!important;
+  }
+}
+
+
+@media only screen and (max-width: 967px) {
+  /* Show hamburger icon on smaller screens */
+  .menu-icon {
+    display: block;
+  }
+  
+  /* Hide regular menu on smaller screens */
+  .nav-bar{
+    display: none!important;
+  }
+  
+  /* Show menu when hamburger icon is clicked */
+  #toggle-menu:checked ~ .menu {
+    display: block;
+  }
+}
+
+
+
+
+

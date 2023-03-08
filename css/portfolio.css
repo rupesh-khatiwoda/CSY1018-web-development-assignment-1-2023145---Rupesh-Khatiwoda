@@ -12,25 +12,25 @@ nav {
     font-size: 24px;
   }
   
-  .menu {
+  .nav-bar {
     display: flex;
     list-style: none;
     font-family: Arial, sans-serif;
   }
-  .menu li {
+  .nav-bar li {
     margin-right: 20px;
     
   }
   
-  .menu li:last-child {
+  .nav-bar li:last-child {
     margin-right: 0;
   }
   
-  .menu a:hover { /*making it hover in bottom with solid white color line*/
+  .nav-bar a:hover { /*making it hover in bottom with solid white color line*/
     border-bottom: 2px solid white;
   }
   
-  .menu-toggle {
+  .nav-bar-toggle {
     display: none;
     color: white;
     font-size: 24px;
@@ -38,22 +38,22 @@ nav {
   }
   
   @media (max-width: 100px) { /*for making responsive*/
-    .menu {
+    .nav-bar {
       display: none;
       flex-direction: column;
       margin-top: 20px;
     }
   
-    .menu-toggle {
+    .nav-bar-toggle {
       display: block;
     }
   
   
-    .menu li {
+    .nav-bar li {
       margin: 10px 0;
     }
   
-    .menu li:last-child {
+    .nav-bar li:last-child {
       margin-bottom: 0;
     }
   
@@ -98,6 +98,9 @@ nav {
   body{
     background-color:rgb(41, 38, 47);
     margin: 0px;
+    background-image: url(../images/unslpash.jpg);
+    background-size: cover;
+
   }
  .color{
   position: absolute;
@@ -106,4 +109,72 @@ nav {
   float:left;
  }
 
+ 
+/* Hide the checkbox */
+#toggle-menu {
+  display: none;
+}
+
+/* Style the hamburger icon */
+.menu-icon {
+  font-family: Arial, sans-serif;
+  font-size: 30px;
+  cursor: pointer;
+  color: azure;
   
+}
+.menu{
+  display: flex;
+  font-size: 10px;
+}
+
+/* Rotate the icon when the checkbox is checked */
+#toggle-menu:checked + .menu-icon {
+  transform: rotate(90deg);
+}
+
+/* Hide the menu by default */
+.menu {
+  display: none;
+  list-style: none;
+}
+
+/* Show the menu when the checkbox is checked */
+#toggle-menu:checked ~ .menu {
+  display: block;
+}
+
+
+
+
+
+
+
+@media only screen and (min-width: 768px) {
+  /* Hide hamburger icon on larger screens */
+  .menu-icon {
+    display: none;
+  }
+  /* Shows regular menu on larger screens */
+  .menu {
+    display: none!important;
+  }
+}
+
+
+@media only screen and (max-width: 767px) {
+  /* Show hamburger icon on smaller screens */
+  .menu-icon {
+    display: block;
+  }
+  
+  /* Hide regular menu on smaller screens */
+  .nav-bar{
+    display: none!important;
+  }
+  
+  /* Showing menu when hamburger icon is clicked */
+  #toggle-menu:checked ~ .menu {
+    display: block;
+  }
+}
