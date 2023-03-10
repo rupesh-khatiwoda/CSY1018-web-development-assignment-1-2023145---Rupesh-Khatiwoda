@@ -106,8 +106,20 @@ nav {
   position: absolute;
  }
  .pic{
-  float:left;
+  display: flex;
+  flex-direction: row-reverse;
+  width: 1400px;
+  float: right;
+  margin: 20px;
+
+  padding: 50px
  }
+ .pic img {
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: transform 0.2s;
+}
 
  
 /* Hide the checkbox */
@@ -150,7 +162,7 @@ nav {
 
 
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 968px) {
   /* Hide hamburger icon on larger screens */
   .menu-icon {
     display: none;
@@ -162,7 +174,7 @@ nav {
 }
 
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 967px) {
   /* Show hamburger icon on smaller screens */
   .menu-icon {
     display: block;

@@ -167,7 +167,7 @@ nav {
 
 
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 968px) {
   /* Hide hamburger icon on larger screens */
   .menu-icon {
     display: none;
@@ -179,7 +179,7 @@ nav {
 }
 
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 967px) {
   /* Show hamburger icon on smaller screens */
   .menu-icon {
     display: block;
