@@ -100,9 +100,7 @@ nav {
   display: block;
 }
 
-
-/* Hide the checkbox */
-#toggle-menu {
+#toggle-menu {/* Hide the checkbox */
   display: none;
 }
 
@@ -119,8 +117,7 @@ nav {
   font-size: 10px;
 }
 
-/* Rotate the icon when the checkbox is checked */
-#toggle-menu:checked + .menu-icon {
+#toggle-menu:checked + .menu-icon { /* Rotate the icon when the checkbox is checked */
   transform: rotate(90deg);
 }
 
@@ -137,32 +134,46 @@ nav {
 
 
 
-@media only screen and (min-width: 968px) {
-  /* Hide hamburger icon on larger screens */
-  .menu-icon {
+@media only screen and (min-width: 968px) { 
+  .menu-icon {  /* Hide hamburger icon on larger screens */
     display: none;
   }
-  /* Show regular menu on larger screens */
-  .menu {
+
+  .menu {    /* Show regular menu on larger screens */
     display: none!important;
+   
   }
+
 }
 
 
-@media only screen and (max-width: 967px) {
-  /* Show hamburger icon on smaller screens */
+@media only screen and (max-width: 967px) {   /* Show hamburger icon on smaller screens */
   .menu-icon {
     display: block;
   }
+  .divide {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;/*making it justified in center*/
+    max-width: 480px;
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+    font-family:cursive;
+    font-weight: 400;
+    position: absolute;
+    padding: 5px;
+  }
+
   
-  /* Hide regular menu on smaller screens */
-  .nav-bar{
-    display: none!important;
+  .nav-bar{  /* Hide regular menu on smaller screens */
+
+    display: none!important;  
+ 
   }
   
-  /* Show menu when hamburger icon is clicked */
-  #toggle-menu:checked ~ .menu {
-    display: block;
+ 
+  #toggle-menu:checked ~ .menu {   /* Show menu when hamburger icon is clicked */                             
+    display: block; 
   }
 }
 

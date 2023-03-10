@@ -72,7 +72,6 @@ nav {
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 600;
     float: left;
-    position: absolute;
   }
   
   .gallery-pic {
@@ -96,7 +95,6 @@ nav {
     font-weight: bold;
   }
   body{
-    background-color:rgb(41, 38, 47);
     margin: 0px;
     background-image: url(../images/unslpash.jpg);
     background-size: cover;
@@ -111,14 +109,12 @@ nav {
   width: 1400px;
   float: right;
   margin: 20px;
-
   padding: 50px
  }
  .pic img {
   display: block;
   width: 100%;
   height: auto;
-  transition: transform 0.2s;
 }
 
  
@@ -140,8 +136,8 @@ nav {
   font-size: 10px;
 }
 
-/* Rotate the icon when the checkbox is checked */
-#toggle-menu:checked + .menu-icon {
+
+#toggle-menu:checked + .menu-icon { /* Rotate the icon when the checkbox is checked */
   transform: rotate(90deg);
 }
 
@@ -158,35 +154,53 @@ nav {
 
 
 
-
-
-
-
-@media only screen and (min-width: 968px) {
-  /* Hide hamburger icon on larger screens */
-  .menu-icon {
+@media only screen and (min-width: 968px) { 
+  .menu-icon {  /* Hide hamburger icon on larger screens */
     display: none;
   }
-  /* Shows regular menu on larger screens */
-  .menu {
+
+  .menu {    /* Show regular menu on larger screens */
     display: none!important;
   }
 }
 
 
-@media only screen and (max-width: 967px) {
-  /* Show hamburger icon on smaller screens */
+@media only screen and (max-width: 967px) {   /* Show hamburger icon on smaller screens */
   .menu-icon {
     display: block;
   }
   
-  /* Hide regular menu on smaller screens */
-  .nav-bar{
-    display: none!important;
+  .nav-bar{  /* Hide regular menu on smaller screens */
+
+    display: none!important;    
   }
-  
-  /* Showing menu when hamburger icon is clicked */
-  #toggle-menu:checked ~ .menu {
-    display: block;
+  .pic{
+    display: flex;
+    flex-direction: row-reverse;
+    width: 480px;
+    float: right;
+    margin: 2px;
+    padding: 10px
+   }
+   .gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;/*making it justified in center*/
+    margin: 0 auto;
+    max-width: 400px;
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    float: left;
+  }
+ 
+  #toggle-menu:checked ~ .menu {   /* Show menu when hamburger icon is clicked */                             
+    display: block; 
   }
 }
+
+
+
+
+

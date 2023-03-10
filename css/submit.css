@@ -1,0 +1,38 @@
+body{
+    background-image: url(../images/celeb.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.page{
+    font-size: 35px;
+    font-family: 'Times New Roman', Times, serif;
+    padding: 390px;
+
+
+}
+.reload{
+    text-decoration: none;
+    border: black;
+    background-color: black;
+    border-radius: 5px;
+    color: azure;
+    padding: 5px;
+}
+.reload:hover{
+    background-color: rgb(15, 1, 52);
+}
+
+
+@media only screen and (max-width: 967px) {
+    .page{
+        font-size: 20px;
+        font-family: 'Times New Roman', Times, serif;
+        padding: 10px;
+        background-repeat: no-repeat;
+     }
+    
+}
+
+
+    
+
