@@ -36,62 +36,87 @@ nav {
     font-size: 24px;
     cursor: pointer;
   }
-  
-  .gallery {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;/*making it justified in center*/
-    margin: 0 auto;
-    max-width: 800px;
-    color: rgb(255, 255, 255);
-    font-size: 20px;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: 600;
-    float: left;
+  .portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 20px;
   }
   
-  .gallery-pic {
-    margin: 10px;
-    width: 300px;
-    padding: 40px;
+  .grid-item {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    text-align: center;
+    padding: 20px;
   }
   
-  .gallery-pic img {
-    display: block;
+  .grid-item img {
     width: 100%;
     height: auto;
-    transition: transform 0.2s;
+    margin-bottom: 10px;
   }
   
-  .gallery-pic img:hover {
-    transform: scale(1.1);
+  .grid-item h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
   }
+  
+  .grid-item p {
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+  .letter {
+    animation-name:bounce;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    padding-right: 10px;
+    font-size: 26px;
+    font-family: cursive;
+  }
+
+  #R {
+    color: red;
+  }
+
+  #U {
+    color: blue;
+  }
+  #P{
+    color: yellow;
+  }
+  #E{
+    color: orangered;
+  
+  }
+  #S{
+    color: rgb(144, 88, 20);
+  }
+  #H{
+    color: aliceblue;
+  }
+
+  @keyframes bounce {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-20px);
+    }
+    100% {
+      transform: translateY(0px);
+    }
+  }
+  
+  
   .Active{
     color: aliceblue;
     font-weight: bold;
   }
   body{
     margin: 0px;
-    background-image: url(../images/unslpash.jpg);
+    background-color: black;
     background-size: cover;
 
   }
- .color{
-  position: absolute;
- }
- .pic{
-  display: flex;
-  flex-direction: row-reverse;
-  width: 1400px;
-  float: right;
-  margin: 20px;
-  padding: 50px
- }
- .pic img {
-  display: block;
-  width: 100%;
-  height: auto;
-}
 
  
 /* Hide the checkbox */

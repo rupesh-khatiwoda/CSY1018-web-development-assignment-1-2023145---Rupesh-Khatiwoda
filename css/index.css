@@ -31,12 +31,6 @@ nav {
     border-bottom: 2px solid white;/*giving color*/
   }
   
-  .nav-bar-toggle {
-    display: none;
-    color: white;
-    font-size: 24px;
-    cursor: pointer;
-  }
   
 
   .Active{
@@ -44,21 +38,28 @@ nav {
     font-weight: bold;
   }
   .index{
-    color: rgb(255, 255, 255);
-    font-size: 22px;
-    font-family: 'Times New Roman', Times, serif;
-    margin: 4px;
+    color: rgb(137, 4, 97);
+    font-size: 24px;
+    font-family: Arial;
+    margin: 5px;
     position: absolute;
     text-align: justify;
-    padding-left: 10px;
-    font-weight: 800;
+    padding-top: 100px;
+    font-weight: 600;
     margin-top: 0px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    border: solid rgb(98, 3, 79);
+    border-radius: 10px;
+    border-style: dotted;
   }
   body{
     background-color:rgb(0, 0, 0);
     margin: 0px;
-    background-image: url(../images/4.jpg);
-    background-size: cover;
+    background-image: url(../images/11.jpg);
+    background-size:auto;
+  
   }
   .first{
     float: left;
@@ -95,7 +96,47 @@ nav {
     list-style: none;
   }
   
+  .letter {
+    animation-name:bounce;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    padding-right: 10px;
+    font-size: 26px;
+    font-family: cursive;
+  }
 
+  #R {
+    color: red;
+  }
+
+  #U {
+    color: blue;
+  }
+  #P{
+    color: yellow;
+  }
+  #E{
+    color: orangered;
+  
+  }
+  #S{
+    color: rgb(144, 88, 20);
+  }
+  #H{
+    color: aliceblue;
+  }
+
+  @keyframes bounce {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-20px);
+    }
+    100% {
+      transform: translateY(0px);
+    }
+  }
 
 @media only screen and (min-width: 968px) {
   /* Hide hamburger icon on larger screens */
@@ -108,30 +149,31 @@ nav {
   }
 }
 
-
 @media only screen and (max-width: 967px) {
   /* Show hamburger icon on smaller screens */
   .menu-icon {
     display: block;
   }
   
+  
   /* Hide regular menu on smaller screens */
   .nav-bar{
     display: none!important;
   }
   .index{
-    color: rgb(255, 251, 254);
+    color: rgb(235, 231, 223);
     font-size: 16px;
-    font-family: 'Times New Roman', Times, serif;
+    font-family:cursive;
     margin-top: 2px;
     text-align: justify;
     margin: 3px;
     padding-top: 5px;
-    font-weight: 400;
-    max-width: 460px;
+    font-weight: 600;
+    max-width: 490px;
   }
   body{
-    background: black;
+    background-image: url(../images/unslpash.jpg);
+    max-width:500px ;
 
   }
   .second{

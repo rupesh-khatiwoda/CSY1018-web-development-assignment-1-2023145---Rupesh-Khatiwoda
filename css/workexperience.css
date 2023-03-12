@@ -1,5 +1,5 @@
 nav {
-  background-color: rgb(42, 1, 42);
+    background-color: rgb(42, 1, 42);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -27,17 +27,52 @@ nav {
     margin-right: 0;
     }
    
-  .nav-bar a:hover {
+  .nav-bar a:hover {/*by putting cursor in menu a solid white line appears below menu*/
     border-bottom: 2px solid white;
   }
   
-  .nav-bar-toggle {
-    display: none;
-    color: white;
-    font-size: 24px;
-    cursor: pointer;
+
+  .letter {
+    animation-name:bounce;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    padding-right: 10px;
+    font-size: 26px;
+    font-family: cursive;
   }
+
+  #R {
+    color: red;
+  }
+
+  #U {
+    color: blue;
+  }
+  #P{
+    color: yellow;
+  }
+  #E{
+    color: orangered;
   
+  }
+  #S{
+    color: rgb(144, 88, 20);
+  }
+  #H{
+    color: aliceblue;
+  }
+
+  @keyframes bounce {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-20px);
+    }
+    100% {
+      transform: translateY(0px);
+    }
+  }
   .Active{
     color: aliceblue;
     font-weight: bold;
@@ -137,8 +172,8 @@ nav {
   font-size: 10px;
 }
 
-/* Rotate the icon when the checkbox is checked */
-#toggle-menu:checked + .menu-icon {
+
+#toggle-menu:checked + .menu-icon {/* Rotate the icon when the checkbox is checked */
   transform: rotate(90deg);
 }
 

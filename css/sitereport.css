@@ -28,23 +28,50 @@ nav {
     margin-right: 0;
     }
    
-  .nav-bar a:hover {
+  .nav-bar a:hover {/*by putting cursor in menu a solid white line appears below menu*/
     border-bottom: 2px solid white;
   }
   
-  .nav-bar-toggle {
-    display: none;
-    color: white;
-    font-size: 24px;
-    cursor: pointer;
+
+  .letter {
+    animation-name:bounce;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    padding-right: 10px;
+    font-size: 26px;
+    font-family: cursive;
   }
+
+  #R {
+    color: red;
+  }
+
+  #U {
+    color: blue;
+  }
+  #P{
+    color: yellow;
+  }
+  #E{
+    color: orangered;
   
-  @media only screen and (max-width: 400px) {
-    .nav-bar
-    {
-      display: none;
-      flex-direction: column;
-      margin-top: 20px;
+  }
+  #S{
+    color: rgb(144, 88, 20);
+  }
+  #H{
+    color: aliceblue;
+  }
+
+  @keyframes bounce {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-20px);
+    }
+    100% {
+      transform: translateY(0px);
     }
   }
   .Active{
@@ -56,7 +83,7 @@ nav {
     flex-wrap: wrap;
     justify-content: center;/*making it justified in center*/
     max-width: 1200px;
-    color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
     font-size: 20px;
     font-family:cursive;
     font-weight: 600;
@@ -67,7 +94,7 @@ nav {
   .mid {
     margin: 10px;
     width: 500px; 
-    border: rgb(243, 3, 3) solid;
+    border: rgb(44, 1, 35) solid;
     border-radius: 20px;
     padding: 5px;
     border-style: dotted;
@@ -76,7 +103,7 @@ nav {
   .intro{
     margin: 10px;
     width: 500px; 
-    border: rgb(243, 3, 3) solid;
+    border: rgb(43, 3, 37) solid;
     border-radius: 20px;
     padding: 5px;
     border-style: dotted;
@@ -89,9 +116,10 @@ nav {
  
  .paragraph{
   text-align: justify;
+  font-weight: 500;
  }
  body{
-  background-image: url(../images/unsplash\ 5.jpg);
+  background-image: url(../images/12.jpg);
  margin: 0px;
   background-size: cover;
  }
@@ -156,12 +184,17 @@ nav {
     flex-wrap: wrap;
     justify-content: center;/*making it justified in center*/
     max-width: 480px;
-    color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
     font-size: 16px;
     font-family:cursive;
-    font-weight: 400;
+    font-weight: 500;
     position: absolute;
     padding: 5px;
+  }
+  body{
+    background-image: url(../images/13.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
   }
 
   
