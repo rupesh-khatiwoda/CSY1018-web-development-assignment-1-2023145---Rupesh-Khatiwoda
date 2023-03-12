@@ -1,5 +1,5 @@
 nav {
-  background-color: #2a3e52;
+  background-color: rgb(42, 1, 42);
     display: flex;
     justify-content: space-between;
     align-items: center; /*making it in center*/
@@ -37,30 +37,6 @@ nav {
     cursor: pointer;
   }
   
-  @media (max-width: 100px) { /*for making responsive*/
-    .nav-bar {
-      display: none;
-      flex-direction: column;
-      margin-top: 20px;
-    }
-  
-    .nav-bar-toggle {
-      display: block;
-    }
-  
-  
-    .nav-bar li {
-      margin: 10px 0;
-    }
-  
-    .nav-bar li:last-child {
-      margin-bottom: 0;
-    }
-  
-    .show {
-      display: block;
-    }
-  }
   .gallery {
     display: flex;
     flex-wrap: wrap;
@@ -194,10 +170,13 @@ nav {
     font-weight: 400;
     float: left;
   }
+  
  
   #toggle-menu:checked ~ .menu {   /* Show menu when hamburger icon is clicked */                             
-    display: block; 
+    display: block;
+
   }
+
 }
 
 

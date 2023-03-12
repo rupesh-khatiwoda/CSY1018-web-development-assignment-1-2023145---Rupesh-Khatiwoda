@@ -1,5 +1,5 @@
 nav {
-  background-color: #2c3e50;
+  background-color: rgb(42, 1, 42);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -38,14 +38,7 @@ nav {
     cursor: pointer;
   }
   
-  @media (max-width: 100px) {
-    .nav-bar {
-      display: none;
-      flex-direction: column;
-      margin-top: 20px;
-    
-    }
-  }
+
   .Active{
     color: aliceblue;
     font-weight: bold;
@@ -95,26 +88,14 @@ nav {
     color: azure;
     
   }
-  .menu{
-    display: flex;
-    font-size: 10px;
-  }
-  
-  /* Rotate the icon when the checkbox is checked */
-  #toggle-menu:checked + .menu-icon {
-    transform: rotate(90deg);
-  }
-  
+
   /* Hide the menu by default */
   .menu {
     display: none;
     list-style: none;
   }
   
-  /* Show the menu when the checkbox is checked */
-  #toggle-menu:checked ~ .menu {
-    display: block;
-  }
+
 
 @media only screen and (min-width: 968px) {
   /* Hide hamburger icon on larger screens */
@@ -157,8 +138,8 @@ nav {
     padding-left: 2px;
   }
   
-  /* Show menu when hamburger icon is clicked */
-  #toggle-menu:checked ~ .menu {
+
+  #toggle-menu:checked ~ .menu { 
     display: block;
   }
 }
