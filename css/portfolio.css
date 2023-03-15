@@ -1,4 +1,4 @@
-nav {
+nav {/*for navigation bar*/
   background-color: rgb(42, 1, 42);
     display: flex;
     justify-content: space-between;
@@ -6,23 +6,23 @@ nav {
     padding: 10px 20px;
   }
   
-  nav a {
+  nav a {/*for nav menu list icons text size and text color*/
     color: white;
     text-decoration: none;
     font-size: 24px;
   }
   
-  .nav-bar {
+  .nav-bar {/*flexing to make it horizointal*/
     display: flex;
     list-style: none;
     font-family: Arial, sans-serif;
   }
-  .nav-bar li {
+  .nav-bar li { /*giving margin of 20px that nav list can be seprated by 20px*/
     margin-right: 20px;
     
   }
   
-  .nav-bar li:last-child {
+  .nav-bar li:last-child {/*reducing margin in last item in menu */
     margin-right: 0;
   }
   
@@ -30,41 +30,35 @@ nav {
     border-bottom: 2px solid white;
   }
   
-  .nav-bar-toggle {
-    display: none;
-    color: white;
-    font-size: 24px;
-    cursor: pointer;
-  }
   .portfolio-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     grid-gap: 20px;
   }
   
-  .grid-item {
-    background-color: #fff;
-    border: 1px solid #ddd;
+  .grid-item {/*making colums for showcasing my projects and giving border */
+    background-color: white;
+    border: 1px solid white;
     text-align: center;
     padding: 20px;
   }
   
-  .grid-item img {
+  .grid-item img {/*giving attribute to image inside the grid*/
     width: 100%;
     height: auto;
     margin-bottom: 10px;
   }
   
-  .grid-item h3 {
+  .grid-item h3 {/*for header inside grid */
     font-size: 24px;
     margin-bottom: 10px;
   }
   
-  .grid-item p {
+  .grid-item p {/*for writing paragraph*/
     font-size: 16px;
     margin-bottom: 20px;
   }
-  .letter {
+  .letter {/*for animating the letters*/
     animation-name:bounce;
     animation-duration: 5s;
     animation-iteration-count: infinite;
@@ -94,7 +88,7 @@ nav {
     color: aliceblue;
   }
 
-  @keyframes bounce {
+  @keyframes bounce { /*bounce animation is used */
     0% {
       transform: translateY(0);
     }
@@ -111,11 +105,27 @@ nav {
     color: aliceblue;
     font-weight: bold;
   }
-  body{
+  body{ /*giving background color and animation*/
     margin: 0px;
     background-color: black;
     background-size: cover;
+    animation: color-transition  8s infinite;
 
+  }
+  @keyframes color-transition {/*animation for body */
+    0% {
+      background-color: black;
+    }
+    25% {
+      background-color:  rgb(42, 1, 42);
+
+    }
+    50% {
+      background-color:  rgb(121, 4, 121);
+    }
+    100% {
+      background-color: rgb(2, 91, 78);
+    }
   }
 
  

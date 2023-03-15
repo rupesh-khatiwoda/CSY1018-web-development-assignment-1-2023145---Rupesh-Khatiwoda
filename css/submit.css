@@ -10,7 +10,7 @@ body{
 
 
 }
-.reload{
+a{
     text-decoration: none;
     border: black;
     background-color: black;
@@ -18,8 +18,8 @@ body{
     color: azure;
     padding: 5px;
 }
-.reload:hover{
-    background-color: rgb(15, 1, 52);
+a:hover{
+    background-color: rgb(49, 14, 145);
 }
 
 

@@ -1,4 +1,4 @@
-nav {
+nav {/*for navigation bar*/
   background-color:  rgb(42, 1, 42);
     display: flex;
     justify-content: space-between;
@@ -8,7 +8,7 @@ nav {
    
      }
   
-  nav a {
+  nav a {/*for navigation bar and its list*/
     color: white;
     text-decoration: none;
     font-size: 24px;
@@ -63,7 +63,7 @@ nav {
     color: aliceblue;
   }
 
-  @keyframes bounce {
+  @keyframes bounce { /*bounce animation is used */
     0% {
       transform: translateY(0);
     }
@@ -100,15 +100,6 @@ nav {
     border-style: dotted;
   }
 
-  .intro{
-    margin: 10px;
-    width: 500px; 
-    border: rgb(43, 3, 37) solid;
-    border-radius: 20px;
-    padding: 5px;
-    border-style: dotted;
-    padding-bottom:40px ;
-  }
   .Active{
     color: aliceblue;
     font-weight: bold;
@@ -118,15 +109,12 @@ nav {
   text-align: justify;
   font-weight: 500;
  }
- body{
+ body{/*putting image*/
   background-image: url(../images/12.jpg);
  margin: 0px;
   background-size: cover;
  }
  
-.item{
-  display: block;
-}
 
 #toggle-menu {/* Hide the checkbox */
   display: none;
@@ -134,7 +122,7 @@ nav {
 
 /* Style the hamburger icon */
 .menu-icon {
-  font-family: Arial, sans-serif;
+  font-family: Arial;
   font-size: 30px;
   cursor: pointer;
   color: azure;

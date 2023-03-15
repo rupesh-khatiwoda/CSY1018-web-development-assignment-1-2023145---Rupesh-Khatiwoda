@@ -6,7 +6,7 @@ nav {/*for nav  bar with background color, flexing display*/
     padding: 10px 20px;
   }
   
-  nav a {
+  nav a {/*for nav list*/
     color: white;
     text-decoration: none;
     font-size: 24px;
@@ -32,7 +32,7 @@ nav {/*for nav  bar with background color, flexing display*/
   
  
   
-  .letter {
+  .letter {/*letters will bounce*/
     animation-name:bounce;
     animation-duration: 5s;
     animation-iteration-count: infinite;
@@ -62,7 +62,7 @@ nav {/*for nav  bar with background color, flexing display*/
     color: aliceblue;
   }
 
-  @keyframes bounce {
+  @keyframes bounce {/*animation in words*/
     0% {
       transform: translateY(0);
     }
@@ -81,12 +81,12 @@ nav {/*for nav  bar with background color, flexing display*/
     font-weight: bold;
   }
   
-/* Remove visible boxes around typing area */
+/* Removes visible boxes around typing area */
 input:focus, textarea:focus {
 	outline: none;
 }
 
-          /* Style for submit button on hover */
+  /* Style for submit button on hover */
 body {
   background-color:black;
   color:white;
