@@ -81,22 +81,23 @@ nav {/*for navigation bar*/
   .divide {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;/*making it justified in center*/
     max-width: 1200px;
     color: rgb(0, 0, 0);
     font-size: 20px;
-    font-family:cursive;
-    font-weight: 600;
+    font-family:'Times New Roman', Times, serif;
+    margin: 2px;
+    font-weight: 400;
     position: absolute;
     padding: 50px;
+    text-align: justify;
   }
   
   .mid {
     margin: 10px;
-    width: 500px; 
-    border: rgb(44, 1, 35) solid;
+    width: 600px; 
+    border: rgb(1, 0, 1) solid;
     border-radius: 20px;
-    padding: 5px;
+    padding: 10px;
     border-style: dotted;
   }
 
@@ -107,14 +108,9 @@ nav {/*for navigation bar*/
  
  .paragraph{
   text-align: justify;
-  font-weight: 500;
+  font-weight: 400;
  }
- body{/*putting image*/
-  background-image: url(../images/12.jpg);
- margin: 0px;
-  background-size: cover;
- }
- 
+
 
 #toggle-menu {/* Hide the checkbox */
   display: none;
@@ -131,6 +127,7 @@ nav {/*for navigation bar*/
 .menu{
   display: flex;
   font-size: 10px;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 #toggle-menu:checked + .menu-icon { /* Rotate the icon when the checkbox is checked */
@@ -154,6 +151,13 @@ nav {/*for navigation bar*/
   .menu-icon {  /* Hide hamburger icon on larger screens */
     display: none;
   }
+  body{/*putting image*/
+    background-image: url(../images/12.jpg);
+   margin: 0px;
+    background-size: cover;
+    background-repeat:repeat;
+   }
+   
 
   .menu {    /* Show regular menu on larger screens */
     display: none!important;
@@ -171,21 +175,43 @@ nav {/*for navigation bar*/
     display: flex;
     flex-wrap: wrap;
     justify-content: center;/*making it justified in center*/
-    max-width: 480px;
     color: rgb(0, 0, 0);
     font-size: 16px;
-    font-family:cursive;
-    font-weight: 500;
-    position: absolute;
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: 400;
     padding: 5px;
   }
-  body{
-    background-image: url(../images/13.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-  }
+.mid{
+ border: black solid;
+ width: auto;
 
-  
+}
+
+body{
+  background: none;
+}
+body{ /*giving background color and animation*/
+  margin: 0px;
+  background-color: rgb(190, 237, 227);
+  background-size: cover;
+  animation: color-transition  8s;
+
+}
+@keyframes color-transition {/*animation for body */
+  0% {
+    background-color: rgb(182, 170, 204);
+  }
+  25% {
+    background-color:  rgb(144, 180, 224);
+
+  }
+  50% {
+    background-color:  rgb(86, 193, 177);
+  }
+  100% {
+    background-color: rgb(205, 234, 155);
+  }
+}
   .nav-bar{  /* Hide regular menu on smaller screens */
 
     display: none!important;  

@@ -38,27 +38,22 @@ nav {/*navigation bar with padding*/
     font-weight: bold;
   }
   .index{/*for border,font.padding,stying*/
-    color: rgb(137, 4, 97);
+    color: rgb(238, 195, 242);
     font-size: 24px;
     font-family: Arial;
-    margin: 5px;
+    margin: 10px;
     position: absolute;
     text-align: justify;
-    padding-top: 100px;
-    font-weight: 600;
+    padding: 100px;
+    font-weight: 400;
     margin-top: 0px;
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-bottom: 20px;
-    border: solid rgb(98, 3, 79);
+    border: solid rgb(128, 8, 116);
     border-radius: 10px;
-    border-style: dotted;
+    border-style: double;
   }
-  body{/*putting background image*/
+  body{/*putting background color*/
     background-color:rgb(0, 0, 0);
     margin: 0px;
-    background-image: url(../images/11.jpg);
-    background-size:auto;
   
   }
   .first{
@@ -94,6 +89,7 @@ nav {/*navigation bar with padding*/
   .menu {
     display: none;
     list-style: none;
+    font-family: Arial, Helvetica, sans-serif;
   }
   
   .letter {/*animation and padding given*/
@@ -162,25 +158,20 @@ nav {/*navigation bar with padding*/
   }
   .index{
     color: rgb(235, 231, 223);
-    font-size: 16px;
+    font-size: 17px;
     font-family:cursive;
     margin-top: 2px;
     text-align: justify;
     margin: 3px;
-    padding-top: 5px;
-    font-weight: 600;
-    max-width: 490px;
+    padding: 10px;
+    font-weight: 400;
+    max-width: 950px;
   }
   body{
     background-image: url(../images/unslpash.jpg);
-    max-width:500px ;
 
   }
-  .second{
-    padding-left: 2px;
-  }
-  
-
+ 
   #toggle-menu:checked ~ .menu { 
     display: block;
   }

@@ -122,7 +122,7 @@ input[type=text] , input[type=email] , textarea
 }
 
 input[type=button] {/*giving  padding, border, margin ,background color, font-size*/ 
-  background-color: #1175b7;
+  background-color: rgb(41, 171, 219);
   color: white;
   padding: 12px 20px;
   border: none;
@@ -134,19 +134,8 @@ input[type=button] {/*giving  padding, border, margin ,background color, font-si
 input[type=button]:hover {/* Style for submit button on hover */
   background-color: green;
 }
-
-/* Responsive layout */
-@media only screen and (max-width: 100px) {
-  .form {
-    width: 100%;
-  }
-}
-.logo{ padding-left: 250px;
-  
-}
-
-.item{
-  display: block;
+.logo{
+  padding-left: 200px;
 }
 
 /* Hide the checkbox */
@@ -165,6 +154,7 @@ input[type=button]:hover {/* Style for submit button on hover */
 .menu{
   display: flex;
   font-size: 10px;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 /* Rotate the icon when the checkbox is checked */
@@ -209,8 +199,9 @@ input[type=button]:hover {/* Style for submit button on hover */
   .form{ /*class for the form*/
     margin: 0 auto;
     max-width: 480px;
-    padding-left: 10px;
+    padding: 10px 50px;
     border-radius: 5px;
+    float:left;
   }
   
   /* Hide regular menu on smaller screens */
