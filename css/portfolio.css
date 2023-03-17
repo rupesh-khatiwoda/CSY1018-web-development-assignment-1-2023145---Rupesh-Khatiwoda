@@ -17,7 +17,7 @@ nav {/*for navigation bar*/
     list-style: none;
     font-family: Arial, sans-serif;
   }
-  .nav-bar li { /*giving margin of 20px that nav list can be seprated by 20px*/
+  .nav-bar li { /*giving margin of 20px that nav list can be distant by 20px*/
     margin-right: 20px;
     
   }
@@ -54,10 +54,6 @@ nav {/*for navigation bar*/
     margin-bottom: 10px;
   }
   
-  .grid-item p {/*for writing paragraph*/
-    font-size: 16px;
-    margin-bottom: 20px;
-  }
   .letter {/*for animating the letters*/
     animation-name:bounce;
     animation-duration: 5s;

@@ -81,24 +81,24 @@ nav {/*for navigation bar*/
   .divide {
     display: flex;
     flex-wrap: wrap;
-    max-width: 1200px;
+    max-width: 1500px;
     color: rgb(0, 0, 0);
     font-size: 20px;
     font-family:'Times New Roman', Times, serif;
     margin: 2px;
     font-weight: 400;
-    position: absolute;
     padding: 50px;
     text-align: justify;
+    flex-direction: row;
   }
   
   .mid {
     margin: 10px;
-    width: 600px; 
+    width: 650px; 
     border: rgb(1, 0, 1) solid;
     border-radius: 20px;
     padding: 10px;
-    border-style: dotted;
+    border-width: 5px;
   }
 
   .Active{
@@ -145,17 +145,14 @@ nav {/*for navigation bar*/
   display: block;
 }
 
-
-
 @media only screen and (min-width: 968px) { 
   .menu-icon {  /* Hide hamburger icon on larger screens */
     display: none;
   }
   body{/*putting image*/
-    background-image: url(../images/12.jpg);
+  background-color: aquamarine;
    margin: 0px;
-    background-size: cover;
-    background-repeat:repeat;
+
    }
    
 
@@ -165,6 +162,26 @@ nav {/*for navigation bar*/
   }
 
 }
+.screen-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 20px;
+}
+
+.screenshot {/*making colums for showcasing my projects and giving border */
+  background-color: rgb(0, 0, 0);
+  border: 1px solid rgb(0, 0, 0);
+  text-align: center;
+  padding: 20px;
+}
+
+.screenshot img {/*giving attribute to image inside the grid*/
+  width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+
 
 
 @media only screen and (max-width: 967px) {   /* Show hamburger icon on smaller screens */

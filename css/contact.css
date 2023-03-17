@@ -103,7 +103,7 @@ body {
   max-width: 500px;
   padding-left: 500px;
   border-radius: 10px;
-  position:absolute;
+  padding-right: 400px;
 }
 
 input[type=text] , input[type=email] , textarea
@@ -172,11 +172,6 @@ input[type=button]:hover {/* Style for submit button on hover */
 #toggle-menu:checked ~ .menu {
   display: block;
 }
-
-
-
-
-
 
 
 @media only screen and (min-width: 968px) {
